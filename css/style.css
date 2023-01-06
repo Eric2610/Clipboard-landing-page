@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 375px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.1fr 1.1fr 0.3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    row-gap: 40px;
+    overflow-x: hidden;
+}
+
+header{
+    width: 375px;
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "intro";
+    background-image: url("../assests/img/bg-header-mobile.png");
+    
+}
+
+.contentIntro{
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logoBox{
+    margin-top: 80px;
+}
+
+main{
+    width: 375px;
+    grid-area: main;
+    display: grid;
+    grid-auto-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "1"
+    "2"
+    "3"
+    "4"
+    "5"
+    "6";
+}
+
+#principal{
+    grid-area: 1;
+    height: 550px;
+    width: 375px;
+}
+
+.principalBox{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principalTitleBox{
+    width: 90%;
+    margin-bottom: 20px;
+}
+.principalTitleBoxStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.principalTextBox{
+    height: 150px;
+    width: 90%;
+}
+.principalTextBoxStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 25px;
+    color:hsl(201, 11%, 66%) ;
+}
+
+.buttonBox1, .buttonBox2{
+    width: 375px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.buttonBox1Style{
+    width: 300px;
+    height: 50px;
+    position: relative;
+    left: 33px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    background-color: hsl(171, 66%, 44%);
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+}
+
+.buttonBox2Style{
+    width: 300px;
+    height: 50px;
+    position: relative;
+    left: 33px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    background-color: hsl(233, 100%, 69%);
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+}
+
+#second{
+    grid-area: 2;
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    width: 375px;
+    justify-content: center;
+}
+.secondTitleBox{
+    width: 375px;
+    margin-bottom: 20px; 
+}
+
+.secondTitleBoxStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: hsl(210, 10%, 33%); 
+}
+
+.secondTextBox{
+    height: 150px;
+    width: 80%;
+    position: relative;
+    left: 40px;
+}
+.secondTextBoxStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 25px;
+    color:hsl(201, 11%, 66%); 
+}
+
+.boxComputer{
+    width: 375px;
+    padding-left: 35px;
+    margin-bottom: 40px;
+}
+.boxComputerStyle{
+    width: 300px;
+}
+
+.boxTitleSearch, .boxTitleIcloud, .boxTitleHistory{
+    width: 375px;
+    margin-bottom: 20px; 
+}
+
+.boxTitleSearchStyle, .boxTitleIcloudStyle, .boxTitleHistoryStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: hsl(210, 10%, 33%); 
+}
+
+.boxTextSearch, .boxTextIcloud, .boxTextHistory{
+    height: 150px;
+    width: 80%;
+    position: relative;
+    left: 40px;
+}
+
+.boxTextSearchStyle, .boxTextIcloudStyle, .boxTextHistoryStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 25px;
+    color:hsl(201, 11%, 66%);
+}
+
+
+#third{
+    grid-area: 3;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 375px;
+    justify-content: center;
+}
+
+.boxTitleThird{
+    width: 375px;
+    margin-bottom: 20px; 
+}
+.boxTitleThirdStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: hsl(210, 10%, 33%);
+}
+.boxTextThird{
+    height: 150px;
+    width: 80%;
+    position: relative;
+    left: 40px; 
+}
+.boxTextThirdStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 25px;
+    color:hsl(201, 11%, 66%);
+}
+
+.boxImageDevices{
+    width: 375px;
+    padding-left: 35px;
+    margin-bottom: 60px;
+}
+.boxImageDevicesStyles{
+    width: 300px;
+}
+
+
+#forth{
+    grid-area: 4;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 375px;
+    align-items: center;
+}
+
+.forthTitleWorkflowStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: hsl(210, 10%, 33%);  
+}
+
+.forthTitleBlacklistStyle, .forthTitleSnippetsStyle, .forthTitleSneakStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.forthBoxText, .forthBoxTextBlacklist, .forthBoxTextSnippets, .forthBoxTextSneak{
+    margin-bottom: 60px;
+    width: 340px;
+}
+
+
+.forthTextWorkflowStyle, .forthTextBlacklistStyle, .forthTextSnippetsStyle, .forthTextSneakStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 25px;
+    color:hsl(201, 11%, 66%);
+}
+.forthIconListStyle, .forthIconTextStyle, .forthIconPreviewStyle{
+    margin-bottom: 20px;
+}
+
+
+#fifth{
+    grid-area: 5;
+    width: 375px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "logos";
+}
+
+.logosBoxImg{
+    grid-area: logos;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoStyle{
+    width: 150px;
+    margin-bottom: 60px;
+}
+
+
+#sixth{
+    width: 375px;
+    grid-area: 6;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sixthBoxTitle{
+    width: 90%;
+    margin-bottom: 20px; 
+}
+
+.sixthTitleStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: hsl(210, 10%, 33%);  
+}
+
+.sixthBoxText{
+    height: 150px;
+    width: 90%;
+}
+
+.sixthTextStyle{
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 25px;
+    color:hsl(201, 11%, 66%) ;
+}
+
+.sixthBoxButton3{
+    margin-bottom: 20px;
+}
+
+.sixthButton3Stlye{
+    width: 300px;
+    height: 50px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    background-color: hsl(171, 66%, 44%);
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+}
+
+.sixthButton4Stlye{
+    width: 300px;
+    height: 50px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    background-color: hsl(233, 100%, 69%);
+}
+
+
+footer{
+    width: 375px;
+    height: 400px;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logoBoxFinalStyle{
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+.boxListFinalStyle{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+li{
+    text-align: center;
+    padding: 10px;
+    color:hsl(201, 11%, 66%);
+}
+
+.fbTwIn{
+    padding: 20px;
+}
+
+@media (min-width: 1440px){
+    body{
+        width: 1440px;
+        row-gap: 0px;
+    }
+
+    header{
+        width: 1440px;
+        height: 350px;
+        background-image: url(../assests/img/bg-header-desktop.png);
+    }
+    main{
+        width: 1440px;
+    }
+    #principal{
+        width: 1440px;
+        height: 350px;
+        display: flex;
+    }
+    .principalBox{
+        width: 1440px;
+        display: flex;
+        flex-direction: column;
+    }
+    .principalsbuttons{
+        display: flex;
+    }
+    .principalTitleBoxStyle{
+        font-size: 3rem;
+    }
+    .principalTextBox{
+        width: 40%;
+        height: 100px;
+    }
+    .principalTextBoxStyle{
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+
+    #second{
+        width: 1440px;
+        height: 900px;
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "secondBox"
+        "secondBox1";
+    }
+    
+    .secondBox{
+        grid-area: secondBox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+    .secondTitleBox{
+        width: 1440px;
+    }
+    .secondTextBox{
+        width: 40%;
+        left: 0;
+        height: 100px;
+    }
+    
+    .secondBox1{
+        grid-area: secondBox1;
+        display: grid;
+        grid-template-rows: 0.5fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "computer total";
+    }
+
+    .secondBoxComputer{
+        grid-area: computer;
+    }
+    .boxComputerStyle{
+        width: 800px;
+    }
+    .boxComputer{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .secondBoxTotal{
+        grid-area: total;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 50px 0 0 150px;
+        
+    }
+    .boxTitleSearch, .boxTitleIcloud, .boxTitleHistory{
+        margin-bottom: 5px; 
+    }
+    .boxTitleSearchStyle, .boxTitleIcloudStyle, .boxTitleHistoryStyle{
+        text-align: left;
+    }
+    .boxTextSearch, .boxTextIcloud, .boxTextHistory{
+        height: 100px;
+        width: 60%;
+        left: 0px;
+    }
+    .boxTextSearchStyle, .boxTextIcloudStyle, .boxTextHistoryStyle{
+        text-align: left;
+    }
+
+    #third{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "thirdBox";
+        height: 800px;
+        width: 1440px;
+    }
+    .thirdTotalBox{
+        grid-area: thirdBox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .boxTitleThird{
+        width: 1440px;
+    }
+    .boxTextThird{
+        height: 150px;
+        width: 40%;
+        left: 0px; 
+    }
+    .boxTextThirdStyle{
+        font-size: 1.2rem;
+    }
+    .boxTextThird{
+        height: 150px;
+        width: 40%;
+        left: 0px; 
+    }
+    .boxImageDevices{
+        width: 800px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+    .boxImageDevicesStyles{
+        width: 800px;
+    }
+
+    #forth{
+        grid-area: 4;
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "box1 box1 box1"
+        "box2 box3 box4";
+        height: 400px;
+        width: 1440px;
+    }
+
+    .forthBox1{
+        grid-area: box1;
+    }
+    .forthBoxTitle{
+        margin-bottom: 20px;
+    }
+    .forthBoxText{
+        width: 1440px;
+    }
+
+    .forthBox2{
+        grid-area: box2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .forthBox3{
+        grid-area: box3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .forthBox4{
+        grid-area: box4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .forthBoxTitleBlacklist, .forthBoxTitleSnippets, .forthBoxTitleSneak{
+        margin-bottom: 20px;
+    }
+
+    #fifth{
+        grid-area: 5;
+        width: 1440px;
+    }
+    .logosBoxImg{
+        grid-area: logos;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoStyle{
+        width: 250px;
+        margin: 0px;
+        padding-left: 80px;
+    }
+
+    #sixth{
+    width: 1440px;
+    grid-area: 6;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .sixthBoxText{
+        height: 100px;
+        width: 40%;
+    }
+    .finalsButtons{
+        width: 45%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer{
+        width: 1440px;
+        height: 150px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-areas: 
+        "finalLogo finalList finalIcons";
+        background-color: lightgray;
+    }
+    
+    .logoBoxFinal{
+        grid-area: finalLogo;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .logoBoxFinalStyle{
+        margin: 0;
+    }
+
+    .boxListFinal{
+        grid-area: finalList;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    ul{
+        display: flex;
+    }
+
+    .boxIconsFinal{
+        grid: finalIcons;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
