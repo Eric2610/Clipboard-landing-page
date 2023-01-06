@@ -247,8 +247,14 @@ main{
     flex-direction: column;
     height: 800px;
     width: 375px;
-    align-items: center;
+
 }
+
+.forthIconList, .forthIconText, .forthIconPreview{
+    display: flex;
+    justify-content: center;
+}
+
 
 .forthTitleWorkflowStyle{
     text-align: center;
